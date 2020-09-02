@@ -1,8 +1,8 @@
-create database email_sender;
+CREATE DATABASE email_sender OWNER postgres;
 
 \c email_sender
 
-create table emails(
+create table emails (
     id serial not null,
     data timestamp not null default current_timestamp,
     assunto varchar(100) not null,
